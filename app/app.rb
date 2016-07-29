@@ -1,9 +1,8 @@
+ENV["RACK_ENV"] ||= "development"
+
 require 'sinatra/base'
 require_relative 'models/user'
 require_relative 'models/data_mapper_setup'
-ENV["RACK_ENV"] ||= "development"
-
-
 
 class ChitterChallenge < Sinatra::Base
   enable :sessions

@@ -13,7 +13,3 @@ class User
     self.password_digest = BCrypt::Password.create(password)
   end
 end
-
-DataMapper.setup(:default, "postgres://localhost/chitter_development")
-DataMapper.finalize
-DataMapper.auto_upgrade!

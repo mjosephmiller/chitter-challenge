@@ -1,5 +1,7 @@
 require 'sinatra/base'
 require_relative 'models/user'
+require_relative 'models/data_mapper_setup'
+
 
 class ChitterChallenge < Sinatra::Base
   enable :sessions

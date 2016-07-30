@@ -9,4 +9,8 @@ feature 'user sign in' do
     expect(page).to have_content "Welcome, #{user.email}"
   end
 
+  # scenario 'a user will be redirected to sign up if the email is not recognised' do
+  #   sign_in(email: 'unknown_user@domain.com', password: user.password)
+  #   expect(current_path).to eq('/users/new')
+  # end
 end

@@ -1,1 +1,19 @@
-<h1>Peeps</h1>
+<% if !current_user %>
+  <form action="/sessions/new">
+  <input type="submit" value="Sign in">
+  </form>
+<% end %>
+
+  </form><h1>Peeps</h1>
+
+<form method='post' action='/peep'>
+  <input type='text' name='peep' placeholder='peep here'>
+  <input type='submit' value='Post peep'>
+</form>
+
+<% @peeps.reverse.each do |peep| %>
+  <ul>
+    <li><%= peep.peep %></li>
+    <li>Posted by @<%= User.get(peep.user_id).username %> - <%= User.get(peep.user_id).name %> - <%= peep.time.strftime("%H:%M:%S") %> </li>
+  </ul>
+<% end %>

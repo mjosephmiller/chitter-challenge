@@ -28,10 +28,23 @@ I want to see the time at which it was made
 
 Features:
 ------
-* A user can sign up to Chitter with their email, password, name and a user name
+* A user can sign up to Chitter with their email, password, name and username.
 * Their email must be unique.
-* Peeps (posts to chitter) have the name of the user,their username and the time it was posted.
+* Peeps (posts to chitter) have the name of the user, their username and the time it was posted.
 * Bcrypt is used to secure the passwords.
-* Data mapper and postgres are used to save the data.
+* Datamapper and postgres are used to save the data.
 * You don't have to be logged in to see the peeps.
 * You can only post if you are logged in.
+
+You can check out this web app on [Heroku](http://chitter-mjm.herokuapp.com), but if you'd prefer to run it locally, here's how:
+
+```
+$ git clone https://github.com/JackOddy/chitter-challenge.git
+
+$ bundle
+
+$ rackup config.ru
+
+```
+
+This app is Twitter clone. A user can sign up and post 'peeps' from their account to the community feed and see what other users are *peeping* about.

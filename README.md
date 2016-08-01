@@ -47,4 +47,4 @@ $ rackup config.ru
 
 ```
 
-This app is Twitter clone. A user can sign up and post 'peeps' from their account to the community feed and see what other users are *peeping* about.
+This app is a Twitter clone. A user can sign up and post 'peeps' from their account to the community feed and see what other users are *peeping* about.

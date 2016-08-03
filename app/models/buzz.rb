@@ -1,11 +1,11 @@
 require 'data_mapper'
 require 'dm-postgres-adapter'
 
-class Peep
+class Buzz
   include DataMapper::Resource
 
   property :id,       Serial
-  property :peep,     String
+  property :buzz,     String
   property :time,     DateTime
 
 

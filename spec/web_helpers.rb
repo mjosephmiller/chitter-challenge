@@ -18,8 +18,9 @@ def sign_in(email:, password:)
   click_button 'Sign in'
 end
 
-def post_peep
+def post_buzz
   sign_in(email: 'user@domain.com', password: 'user')
-  fill_in 'peep', with: 'This is a test peep lol'
-  click_button 'Post peep'
+  visit '/buzz/new'
+  fill_in 'buzz', with: 'This is a test buzz lol'
+  click_button 'Post buzz'
 end

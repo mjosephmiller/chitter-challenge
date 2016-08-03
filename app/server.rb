@@ -5,7 +5,7 @@ class ChitterChallenge < Sinatra::Base
   set :session_secret, 'super secret'
 
   get '/' do
-  @peeps = Peep.all
+  @buzz = Buzz.all
   erb :'home'
   end
 

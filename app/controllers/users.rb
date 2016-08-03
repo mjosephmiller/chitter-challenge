@@ -1,4 +1,4 @@
-class ChitterChallenge < Sinatra::Base
+class Beehive < Sinatra::Base
 
   get '/users/new' do
     @user = User.new

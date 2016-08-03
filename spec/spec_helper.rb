@@ -9,7 +9,7 @@ require 'web_helpers'
 require 'database_cleaner'
 
 
-Capybara.app = ChitterChallenge
+Capybara.app = Beehive
 
 RSpec.configure do |config|
   # Everything in this block runs once before all the tests run

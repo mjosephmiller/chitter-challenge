@@ -1,4 +1,4 @@
-class ChitterChallenge < Sinatra::Base
+class Beehive < Sinatra::Base
   use Rack::MethodOverride
   register Sinatra::Flash
   enable :sessions

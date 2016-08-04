@@ -91,6 +91,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    relative-time (0.1.0)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
@@ -148,6 +149,7 @@ DEPENDENCIES
   data_mapper
   database_cleaner
   dm-postgres-adapter
+  relative-time
   rspec
   rspec-sinatra
   sinatra

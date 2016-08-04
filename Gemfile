@@ -12,3 +12,4 @@ gem 'coveralls', require: false
 gem 'rspec-sinatra'
 gem 'capybara'
 gem 'database_cleaner'
+gem 'relative-time'

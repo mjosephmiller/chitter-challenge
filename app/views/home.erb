@@ -17,6 +17,6 @@
 <% @buzz.reverse.each do |buzz| %>
   <ul>
     <li><%= buzz.buzz %></li>
-    <li>Posted by @<%= User.get(buzz.user_id).username %> - <%= User.get(buzz.user_id).name %> - <%= buzz.time.strftime("%H:%M:%S") %> </li>
+    <li>Posted by <%= User.get(buzz.user_id).name %> - @<%= User.get(buzz.user_id).username %> - <%= buzz.time.strftime("%H:%M:%S") %> </li>
   </ul>
 <% end %>

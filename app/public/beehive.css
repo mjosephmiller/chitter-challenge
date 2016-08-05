@@ -1,21 +1,52 @@
 
-head.home_page {
-  background: url(http://pre02.deviantart.net/7dc0/th/pre/f/2012/030/7/f/battle_bases_01bg_hd_by_xalien95-d4o49yb.png) no-repeat center center;
-background-size: cover;
-}
 
 .jumbotron {
-    padding: 30px 15px;
-    margin-bottom: 30px;
+    padding: 0px;
+    margin-bottom: 0px;
     color: inherit;
-    background-color: #eee;
-    background-image: url(https://static.pexels.com/photos/46164/field-of-rapeseeds-oilseed-rape-blutenmeer-yellow-46164.jpeg);
+    background-color: #83d6ff;
     background-size: cover;
+    font-size: 200px;
+    font-family: helvetica; serif;
+    font-weight: bold;
+    color: white;
+    height: 275px;
+}
+.brand {
+    float: left;
+    height: 50px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-right: 10px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.list-group {
+  text-align: center;
 }
 
-.welcome {
-  position: relative;
+.list-group-item.active {
+  background-color: orange;
+  background-image: none;
+  border-color: orange;
+}
+.list-group-item.active:focus, .list-group-item.active:hover {
+  background-color: orange;
+  background-image: none;
+  border-color: orange;
+}
+.buzz_submit {
+  text-align: center;
+}
 
+.signout {
+  float: right;
+}
+
+}
+.welcome {
+  float: left;
 }
 /*
 body.home_page {

@@ -11,15 +11,24 @@
 
 
 <body class = "home_page">
-
+<div class = "buzz_submit">
 <form method='post' action='/buzz'>
   <input type='text' name='buzz' placeholder="So, what's the buzz?">
   <input type='submit' value='Post'>
 </form>
+</div>
 
-<% @buzz.reverse.each do |buzz| %>
-  <ul>
-    <li><%= buzz.buzz %></li>
-    <li>Posted by <%= User.get(buzz.user_id).name %> - @<%= User.get(buzz.user_id).username %> - <%= buzz.time.strftime("%H:%M:%S") %> </li>
-  </ul>
-<% end %>
+<div class="list-group">
+
+  <a href="#" class="list-group-item active">
+    <h4 class="list-group-item-heading">Your Hive</h4>
+    <!-- <p class="list-group-item-text">...</p> -->
+  </a><br>
+
+  <% @buzz.reverse.each do |buzz| %>
+
+      <i><%= buzz.buzz %></i><br>
+      Posted by <%= User.get(buzz.user_id).name %> - @<%= User.get(buzz.user_id).username %> - <%= buzz.time.strftime("%H:%M:%S") %><br><br>
+
+  <% end %>
+</div>

@@ -1,5 +1,13 @@
+<head>
+  <title>Beehive</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" >
+
+  <link rel="stylesheet" href="beehive.css" />
+</head>
+
 <body class = "home_page">
 <% if !current_user %>
+<div class = "signin_signup">
   <form action="/sessions/new">
   <input type="submit" value="Sign in">
   </form>
@@ -7,8 +15,7 @@
   <input type="submit" value="Sign up">
   </form>
 <% end %>
-
-
+</div>
 
 <body class = "home_page">
 <div class = "buzz_submit">
@@ -22,13 +29,13 @@
 
   <a href="#" class="list-group-item active">
     <h4 class="list-group-item-heading">Your Hive</h4>
-    <!-- <p class="list-group-item-text">...</p> -->
   </a><br>
+    <% @buzz.reverse.each do |buzz| %>
+      <div class ="buzzfeed"
+      <br>
+      <%= buzz.buzz %><br>
+      <i> Posted by <%= User.get(buzz.user_id).name %> - @<%= User.get(buzz.user_id).username %> - <%= buzz.time.strftime("%H:%M:%S") %><br><br></i>
+      </div>
+    <% end %>
 
-  <% @buzz.reverse.each do |buzz| %>
-
-      <i><%= buzz.buzz %></i><br>
-      Posted by <%= User.get(buzz.user_id).name %> - @<%= User.get(buzz.user_id).username %> - <%= buzz.time.strftime("%H:%M:%S") %><br><br>
-
-  <% end %>
 </div>

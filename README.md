@@ -39,7 +39,7 @@ Features:
 You can check out this web app on [Heroku](http://chitter-mjm.herokuapp.com), but if you'd prefer to run it locally, here's how:
 
 ```
-$ git clone https://github.com/JackOddy/chitter-challenge.git
+$ git clone https://github.com/mjosephmiller/chitter-challenge.git
 
 $ bundle
 
